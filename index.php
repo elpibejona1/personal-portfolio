@@ -2,10 +2,10 @@
 <?php require("_assets/common.php"); ?>
 <html lang="en">
 <head>
-<? $includeFile->includeContent(0,'topInc'); ?>
+<?php $includeFile->includeContent(0,'topInc'); ?>
 </head>
 <body>
-<? $includeFile->includeContent(0,'header'); ?>
+<?php $includeFile->includeContent(0,'header'); ?>
 
 <div class="screen screen--1" data-screen="1" id="home">
 	<div class="nameSquare">
@@ -58,54 +58,56 @@
 			<div class="box box--work box--work--1 box--firstRow" onclick="void(0)">
 				<div class="box__info">
 					<div class="box__info__content">
-						<h3 class="box__info__title">General Motors 2016&nbsp;SR</h3>
+						<h3 class="box__info__title">Walmart 2018&nbsp;AR</h3>
 						<p class="box__info__myRole">My role:</p>
 						<ul class="list">
 							<li>Site buildout lead</li>
-							<li>Responsive styling (to mobile)</li>
+							<li>Responsive styling (mobile)</li>
 							<li>Cross browser/device testing and debugging</li>
 						</ul>
-						<a target="_blank" href="http://www.gmsustainability.com/home.html#home">View Site</a>
+						<a target="_blank" href="http://www.corporatereport.com/walmart/2018/ar/">View Site</a>
 					</div>
 				</div>
 			</div>
 			<div class="box box--work box--work--2 box--firstRow" onclick="void(0)">
 				<div class="box__info">
 					<div class="box__info__content">
-						<h3 class="box__info__title">Regions 2016 AR</h3>
+						<h3 class="box__info__title">MEAG Power 2017&nbsp;AR</h3>
 						<p class="box__info__myRole">My role:</p>
 						<ul class="list">
 							<li>Site buildout lead</li>
-							<li>Responsive styling (to tablet)</li>
+							<li>Responsive styling (mobile)</li>
 							<li>Cross browser/device testing and debugging</li>
 						</ul>
-						<a target="_blank" href="http://www.corporatereport.com/Regions2016AnnualReview/">View Site</a>
+						<a target="_blank" href="https://ar.meagpower.org/">View Site</a>
 					</div>
 				</div>
 			</div>
 			<div class="box box--work box--work--3 box--firstRow" onclick="void(0)">
 				<div class="box__info">
 					<div class="box__info__content">
-						<h3 class="box__info__title">Regions 2015 AR</h3>
+						<h3 class="box__info__title">Rockwell Collins 2017&nbsp;AR</h3>
 						<p class="box__info__myRole">My role:</p>
 						<ul class="list">
-							<li>Site buildout team member</li>
+							<li>Site buildout lead</li>
+							<li>Responsive styling (mobile)</li>
 							<li>Cross browser/device testing and debugging</li>
 						</ul>
-						<a target="_blank" href="http://www.corporatereport.com/Regions2015AnnualReview/index.php">View Site</a>
+						<a target="_blank" href="http://www3.rockwellcollins.com/annualreport/2017/">View Site</a>
 					</div>
 				</div>
 			</div>
 			<div class="box box--work box--work--4 box--firstRow" onclick="void(0)">
 				<div class="box__info">
 					<div class="box__info__content">
-						<h3 class="box__info__title">Hilton 2016 AR</h3>
+						<h3 class="box__info__title">CF Industries 2017 AR</h3>
 						<p class="box__info__myRole">My role:</p>
 						<ul class="list">
-							<li>Responsive styling (to mobile)</li>
+							<li>Site buildout lead</li>
+							<li>Responsive styling (tablet)</li>
 							<li>Cross browser/device testing and debugging</li>
 						</ul>
-						<a target="_blank" href="http://www.corporatereport.com/hilton/2016/ar/">View Site</a>
+						<a target="_blank" href="http://www.corporatereport.com/cfindustries/2017/ar/">View Site</a>
 					</div>
 				</div>
 			</div>
@@ -114,12 +116,13 @@
 			<div class="box box--work box--work--5" onclick="void(0)">
 				<div class="box__info">
 					<div class="box__info__content">
-						<h3 class="box__info__title">Cox Enterprises 2016 CSR</h3>
+						<h3 class="box__info__title">Caterpillar 2017 SR</h3>
 						<p class="box__info__myRole">My role:</p>
 						<ul class="list">
-							<li>Site buildout team member</li>
+							<li>Responsive styling (mobile)</li>
+							<li>Cross browser/device testing and debugging</li>
 						</ul>
-						<a target="_blank" href="http://coxcsrreport.com/">View Site</a>
+						<a target="_blank" href="http://reports.caterpillar.com/sr/">View Site</a>
 					</div>
 				</div>
 			</div>
@@ -132,13 +135,14 @@
 			<div class="box box--work box--work--8" onclick="void(0)">
 				<div class="box__info">
 					<div class="box__info__content">
-						<h3 class="box__info__title">Smucker's 2016 CRR</h3>
+						<h3 class="box__info__title">Mohawk Industries 2017&nbsp;AR</h3>
 						<p class="box__info__myRole">My role:</p>
 						<ul class="list">
-							<li>Site buildout team member</li>
+							<li>Site buildout lead</li>
+							<li>Responsive styling (tablet)</li>
 							<li>Cross browser/device testing and debugging</li>
 						</ul>
-						<a target="_blank" href="http://corporateresponsibility.jmsmucker.com/">View Site</a>
+						<a target="_blank" href="http://www.corporatereport.com/mohawk/2017/ar/">View Site</a>
 					</div>
 				</div>
 			</div>
@@ -147,49 +151,53 @@
 			<div class="box box--work box--work--9 box--lastRow" onclick="void(0)">
 				<div class="box__info">
 					<div class="box__info__content">
-						<h3 class="box__info__title">Rockwell Collins 2016 AR</h3>
+						<h3 class="box__info__title">Mohawk Industries 2017&nbsp;SR</h3>
 						<p class="box__info__myRole">My role:</p>
 						<ul class="list">
+							<li>Site buildout lead</li>
+							<li>Responsive styling (tablet)</li>
 							<li>Cross browser/device testing and debugging</li>
 						</ul>
-						<a target="_blank" href="http://www3.rockwellcollins.com/annualreport/2016/">View Site</a>
+						<a target="_blank" href="http://www.mohawksustainability.com/">View Site</a>
 					</div>
 				</div>
 			</div>
 			<div class="box box--work box--work--10 box--lastRow" onclick="void(0)">
 				<div class="box__info">
 					<div class="box__info__content">
-						<h3 class="box__info__title">Campbell's 2016 CRR</h3>
+						<h3 class="box__info__title">The Clorox Company 2017&nbsp;IR</h3>
 						<p class="box__info__myRole">My role:</p>
 						<ul class="list">
+							<li>Site buildout team member</li>
+							<li>Responsive styling (mobile)</li>
 							<li>Cross browser/device testing and debugging</li>
 						</ul>
-						<a target="_blank" href="http://www.campbellcsr.com/">View Site</a>
+						<a target="_blank" href="https://annualreport.thecloroxcompany.com/index.php">View Site</a>
 					</div>
 				</div>
 			</div>
 			<div class="box box--work box--work--11 box--lastRow" onclick="void(0)">
 				<div class="box__info">
 					<div class="box__info__content">
-						<h3 class="box__info__title">Mohawk 2016 AR</h3>
+						<h3 class="box__info__title">General Motors 2017&nbsp;AR</h3>
 						<p class="box__info__myRole">My role:</p>
 						<ul class="list">
-							<li>Responsive styling (to tablet)</li>
+							<li>Site buildout team member</li>
 							<li>Cross browser/device testing and debugging</li>
 						</ul>
-						<a target="_blank" href="http://www.corporatereport.com/mohawk/2016/ar/">View Site</a>
+						<a target="_blank" href="http://www.gmsustainability.com/intro.html">View Site</a>
 					</div>
 				</div>
 			</div>
 			<div class="box box--work box--work--12 box--lastRow" onclick="void(0)">
 				<div class="box__info">
 					<div class="box__info__content">
-						<h3 class="box__info__title">Waste Management 2016&nbsp;SR</h3>
+						<h3 class="box__info__title">Whirlpool Corporation 2017&nbsp;AR</h3>
 						<p class="box__info__myRole">My role:</p>
 						<ul class="list">
 							<li>Cross browser/device testing and debugging</li>
 						</ul>
-						<a target="_blank" href="http://sustainability.wm.com/index.php">View Site</a>
+						<a target="_blank" href="http://www.whirlpoolcorp.com/2017Annual/index.php">View Site</a>
 					</div>
 				</div>
 			</div>
@@ -253,6 +261,6 @@
 	</div>
 </div>
 
-<? $includeFile->includeContent(0,'botInc'); ?>
+<?php $includeFile->includeContent(0,'botInc'); ?>
 </body>
 </html>
