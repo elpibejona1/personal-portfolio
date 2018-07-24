@@ -212,17 +212,12 @@
 	<div class="container">
 		<div class="row row--about">
 			<img src="_images/screen5/profile.jpg" alt="" class="about__profile">
-			<p class="about__blurb">I am a Front-End Web Developer that specializes in using JavaScript, JQuery, AJAX, HTML5, and CSS3 to construct high-quality, responsive web content. <br><br> I am currently privileged to work as a part of the Corporate Reports Inc. Interactive Web Development Team. I also freelance for local non-profit organizations in the Atlanta Area. I enjoy learning new skills and I am always looking for ways to improve my craft. If you would like to contact me for a freelance oportunity, please don't hesitate to do so by clicking on the links below.</p>
+			<p class="about__blurb">I am a Front-End Web Developer that specializes in using JavaScript, JQuery, AJAX, HTML5, and CSS3 to construct high-quality, responsive web content. <br><br> I am currently privileged to work as a part of the Corporate Reports Inc. Interactive Web Development Team. I also freelance for local non-profit organizations in the Atlanta Area. I enjoy learning new skills and I am always looking for ways to improve my craft. If you would like to contact me for a freelance oportunity, please don't hesitate to do so by clicking on the link below.</p>
 		</div>
 		<div class="row">
 			<div class="about__buttonWrapper">
 				<div class="about__button about__button--contact">
-					<a href="#">Contact</a>
-				</div>
-			</div>
-			<div class="about__buttonWrapper">
-				<div class="about__button about__button--download">
-					<a target="_blank" href="_pdf/Resume_jguiles.pdf">Download Resume</a>
+					<a href="#">Contact Me</a>
 				</div>
 			</div>
 		</div>
