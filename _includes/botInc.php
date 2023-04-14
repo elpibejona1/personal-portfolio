@@ -1,7 +1,7 @@
-<script src="<?php echo $directory;?>_js/greensock/TimelineMax.min.js"></script>
-<script src="<?php echo $directory;?>_js/greensock/TweenMax.min.js"></script>
-<script src="<?php echo $directory;?>_js/ScrollMagic.js"></script>
-<script src="<?php echo $directory;?>_js/plugins/debug.addIndicators.js"></script>
-<script src="<?php echo $directory;?>_js/plugins/animation.gsap.js"></script>
-<script src="<?php echo $directory;?>_js/jquery.mousewheel.js"></script>
-<script src="<?php echo $directory; ?>_js/main.js"></script>
+<script src="<?php echo $directory; ?>_js/greensock/gsap.min.js"></script>
+<!-- gsap plugins -->
+<script src="<?php echo $directory; ?>_js/ScrollMagic.min.js"></script>
+<script src="<?php echo $directory; ?>_js/plugins/debug.addIndicators.min.js"></script>
+<script src="<?php echo $directory; ?>_js/plugins/animation.gsap.min.js"></script>
+<script src="<?php echo $directory; ?>_js/plugins/jquery.ScrollMagic.min.js"></script>
+<script src="<?php echo $directory; ?>_js/main.js?v.2021.1"></script>

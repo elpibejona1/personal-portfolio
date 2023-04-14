@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51" role="img" aria-labelledby="logoLabel">
+  <title id="logoLabel">jonguiles.com</title>
+  <circle id="logoCircle" class="header__logo__circle" cx="25.5" cy="25.5" r="25" style="fill: none; stroke: #18908C; stroke-miterlimit: 10;"/>
+  <g class="header__logo__letters">
+    <path d="m18.11,14.36h2.82v14.51c0,2.71-.6,4.62-1.81,5.75s-2.67,1.69-4.37,1.69-3.25-.42-4.63-1.27v-2.79h.12c1.26.93,2.54,1.39,3.84,1.39s2.3-.32,2.99-.96,1.04-1.85,1.04-3.63c0,0,0-14.69,0-14.69Z" style="fill: #bfa181; stroke: #bfa181; stroke-miterlimit: 10;"/>
+    <path d="m30.73,24.46h8.15v9.8c-2.67,1.59-5.43,2.39-8.28,2.39-3.25,0-5.87-1.03-7.87-3.1s-3.01-4.74-3.01-8.03,1.03-5.96,3.1-8.03,4.55-3.1,7.46-3.1,5.66.8,8.26,2.39v2.91h-.12c-2.54-1.72-5.05-2.57-7.52-2.57s-4.48.74-6.03,2.23c-1.55,1.49-2.33,3.51-2.33,6.06s.75,4.62,2.26,6.2,3.56,2.37,6.17,2.37c1.94,0,3.75-.45,5.42-1.36v-5.61h-5.67v-2.54h.01Z" style="fill: #bfa181; stroke: #bfa181; stroke-miterlimit: 10;"/>
+  </g>
+</svg>

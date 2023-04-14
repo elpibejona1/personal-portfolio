@@ -1,6 +1,0 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="38.88" height="30" viewBox="0 0 38.88 30">
-  <title>hamburger</title>
-  <line class="menu__hamburger__top" y1="2.5" x2="38.88" y2="2.5" style="fill: none;stroke: #fff;stroke-miterlimit: 10;stroke-width: 5px"/>
-  <line class="menu__hamburger__middle" y1="15" x2="38.88" y2="15" style="fill: none;stroke: #fff;stroke-miterlimit: 10;stroke-width: 5px"/>
-  <line class="menu__hamburger__bottom" y1="27.5" x2="38.88" y2="27.5" style="fill: none;stroke: #fff;stroke-miterlimit: 10;stroke-width: 5px"/>
-</svg>

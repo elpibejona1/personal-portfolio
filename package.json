@@ -1,0 +1,25 @@
+{
+  "name": "reg_009_2020_ar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://jonguiles@bitbucket.org/corporatereportsinc/reg_009_2020_ar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/corporatereportsinc/reg_009_2020_ar#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-batch-replace": "0.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sitemap": "^8.0.0"
+  },
+  "dependencies": {
+    "gulp-tinypng-compress": "^1.2.5"
+  }
+}

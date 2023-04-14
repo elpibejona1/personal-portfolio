@@ -2,260 +2,129 @@
 <?php require("_assets/common.php"); ?>
 <html lang="en">
 <head>
-<?php $includeFile->includeContent(0,'topInc'); ?>
+<?php # FIXME: Update '<h1>','<title>'
+ $cri->includeContent(0,'topInc','','Jon Guiles, WAS'); ?>
+<!-- FIXME: Update canonical tag
+<link rel="canonical" href="https://www.domain.com/" />
+-->
 </head>
 <body>
-<?php $includeFile->includeContent(0,'header'); ?>
+<?php $cri->includeContent(0,'header'); ?>
 
-<div class="screen screen--1" data-screen="1" id="home">
-	<div class="nameSquare">
-		<h1 class="nameSquare__heading">Jon Guiles</h1>
-		<h2 class="nameSquare__tagLine">Front-End Web Developer</h2>
-		<p class="nameSquare__scroll nameSquare__scroll--1"><i class="fa fa-angle-down"></i><br><i class="fa fa-angle-down"></i><br><i class="fa fa-angle-down"></i></p>
-	</div>
-	<div class="fullContainer">
-		<video class="screen--1__video" loop muted autoplay poster="_images/screen1/poster.jpg" src="_video/screen1/intro-short.mp4" type="video/mp4" preload="metadata" playsinline>
-		</video>
-	</div>
-</div>
-<div class="screen screen--2" data-screen="2" id="skills">
-	<div class="nameSquare">
-		<h1 class="nameSquare__heading">Jon Guiles</h1>
-		<h2 class="nameSquare__tagLine">Development Skills</h2>
-		<p class="nameSquare__scroll"><i class="fa fa-angle-down"></i><br><i class="fa fa-angle-down"></i><br><i class="fa fa-angle-down"></i></p>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="box box--skills box--skills--1 box--firstRow"></div>
-			<div class="box box--skills box--skills--2 box--firstRow"></div>
-			<div class="box box--skills box--skills--3 box--firstRow"></div>
-			<div class="box box--skills box--skills--4 box--firstRow"></div>
-		</div>
-		<div class="row">
-			<div class="box box--skills box--skills--5 skills--first"></div>
-			<div class="box box--skills box--skills--6 box--empty"></div>
-			<div class="box box--skills box--skills--7 box--empty"></div>
-			<div class="box box--skills box--skills--8"></div>
-		</div>
-		<div class="row">
-			<div class="box box--skills box--skills--9 box--lastRow"></div>
-			<div class="box box--skills box--skills--10 box--lastRow"></div>
-			<div class="box box--skills box--skills--11 box--lastRow">
-				<span>REACT</span>
-			</div>
-			<div class="box box--skills box--skills--12 box--lastRow"></div>
+<main tabindex="-1">
+	<div class="homeIntro" aria-hidden="true">
+		<div class="homeIntro__logo">
+			<?php include('_images/global/logo.svg'); ?>
 		</div>
 	</div>
-</div>
-<div class="screen screen--3" data-screen="3" id="work">
-	<div class="nameSquare nameSquare--work">
-		<h1 class="nameSquare__heading">Jon Guiles</h1>
-		<h2 class="nameSquare__tagLine nameSquare__tagline--samples">Work Samples - <br>CRI&nbsp;Communications</h2>
-		<p class="nameSquare__scroll"><i class="fa fa-angle-down"></i><br><i class="fa fa-angle-down"></i><br><i class="fa fa-angle-down"></i></p>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="box box--work box--work--1 box--firstRow" onclick="void(0)">
-				<div class="box__info">
-					<div class="box__info__content">
-						<h3 class="box__info__title">Walmart 2018&nbsp;AR</h3>
-						<p class="box__info__myRole">My role:</p>
-						<ul class="list">
-							<li>Site buildout lead</li>
-							<li>Responsive styling (mobile)</li>
-							<li>Cross browser/device testing and debugging</li>
-						</ul>
-						<a target="_blank" href="http://www.corporatereport.com/walmart/2018/ar/">View Site</a>
-					</div>
-				</div>
-			</div>
-			<div class="box box--work box--work--2 box--firstRow" onclick="void(0)">
-				<div class="box__info">
-					<div class="box__info__content">
-						<h3 class="box__info__title">MEAG Power 2017&nbsp;AR</h3>
-						<p class="box__info__myRole">My role:</p>
-						<ul class="list">
-							<li>Site buildout lead</li>
-							<li>Responsive styling (mobile)</li>
-							<li>Cross browser/device testing and debugging</li>
-						</ul>
-						<a target="_blank" href="https://ar.meagpower.org/">View Site</a>
-					</div>
-				</div>
-			</div>
-			<div class="box box--work box--work--3 box--firstRow" onclick="void(0)">
-				<div class="box__info">
-					<div class="box__info__content">
-						<h3 class="box__info__title">Rockwell Collins 2017&nbsp;AR</h3>
-						<p class="box__info__myRole">My role:</p>
-						<ul class="list">
-							<li>Site buildout lead</li>
-							<li>Responsive styling (mobile)</li>
-							<li>Cross browser/device testing and debugging</li>
-						</ul>
-						<a target="_blank" href="http://www3.rockwellcollins.com/annualreport/2017/">View Site</a>
-					</div>
-				</div>
-			</div>
-			<div class="box box--work box--work--4 box--firstRow" onclick="void(0)">
-				<div class="box__info">
-					<div class="box__info__content">
-						<h3 class="box__info__title">CF Industries 2017 AR</h3>
-						<p class="box__info__myRole">My role:</p>
-						<ul class="list">
-							<li>Site buildout lead</li>
-							<li>Responsive styling (tablet)</li>
-							<li>Cross browser/device testing and debugging</li>
-						</ul>
-						<a target="_blank" href="http://www.corporatereport.com/cfindustries/2017/ar/">View Site</a>
-					</div>
+	<div class="homeScreen homeScreen--1">
+		<div class="container">
+			<div class="row row--mid">
+				<div class="homeScreen__content centered">
+					<h1 class="heading heading--first">Welcome</h1>
+					<p>My name is <span>Jon Guiles</span>.</p>
+					<p>I am a <span>front-end developer</span>, <span>educator</span>, and <span>web accessibility specialist</span>.</p>
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="box box--work box--work--5" onclick="void(0)">
-				<div class="box__info">
-					<div class="box__info__content">
-						<h3 class="box__info__title">Caterpillar 2017 SR</h3>
-						<p class="box__info__myRole">My role:</p>
-						<ul class="list">
-							<li>Responsive styling (mobile)</li>
-							<li>Cross browser/device testing and debugging</li>
-						</ul>
-						<a target="_blank" href="http://reports.caterpillar.com/sr/">View Site</a>
-					</div>
-				</div>
-			</div>
-			<div class="box box--work box--work--6 box--empty" onclick="void(0)">
-				
-			</div>
-			<div class="box box--work box--work--7 box--empty" onclick="void(0)">
-				
-			</div>
-			<div class="box box--work box--work--8" onclick="void(0)">
-				<div class="box__info">
-					<div class="box__info__content">
-						<h3 class="box__info__title">Mohawk Industries 2017&nbsp;AR</h3>
-						<p class="box__info__myRole">My role:</p>
-						<ul class="list">
-							<li>Site buildout lead</li>
-							<li>Responsive styling (tablet)</li>
-							<li>Cross browser/device testing and debugging</li>
-						</ul>
-						<a target="_blank" href="http://www.corporatereport.com/mohawk/2017/ar/">View Site</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="box box--work box--work--9 box--lastRow" onclick="void(0)">
-				<div class="box__info">
-					<div class="box__info__content">
-						<h3 class="box__info__title">Mohawk Industries 2017&nbsp;SR</h3>
-						<p class="box__info__myRole">My role:</p>
-						<ul class="list">
-							<li>Site buildout lead</li>
-							<li>Responsive styling (tablet)</li>
-							<li>Cross browser/device testing and debugging</li>
-						</ul>
-						<a target="_blank" href="http://www.mohawksustainability.com/">View Site</a>
-					</div>
-				</div>
-			</div>
-			<div class="box box--work box--work--10 box--lastRow" onclick="void(0)">
-				<div class="box__info">
-					<div class="box__info__content">
-						<h3 class="box__info__title">The Clorox Company 2017&nbsp;IR</h3>
-						<p class="box__info__myRole">My role:</p>
-						<ul class="list">
-							<li>Site buildout team member</li>
-							<li>Responsive styling (mobile)</li>
-							<li>Cross browser/device testing and debugging</li>
-						</ul>
-						<a target="_blank" href="https://annualreport.thecloroxcompany.com/index.php">View Site</a>
-					</div>
-				</div>
-			</div>
-			<div class="box box--work box--work--11 box--lastRow" onclick="void(0)">
-				<div class="box__info">
-					<div class="box__info__content">
-						<h3 class="box__info__title">General Motors 2017&nbsp;AR</h3>
-						<p class="box__info__myRole">My role:</p>
-						<ul class="list">
-							<li>Site buildout team member</li>
-							<li>Cross browser/device testing and debugging</li>
-						</ul>
-						<a target="_blank" href="http://www.gmsustainability.com/intro.html">View Site</a>
-					</div>
-				</div>
-			</div>
-			<div class="box box--work box--work--12 box--lastRow" onclick="void(0)">
-				<div class="box__info">
-					<div class="box__info__content">
-						<h3 class="box__info__title">Whirlpool Corporation 2017&nbsp;AR</h3>
-						<p class="box__info__myRole">My role:</p>
-						<ul class="list">
-							<li>Cross browser/device testing and debugging</li>
-						</ul>
-						<a target="_blank" href="http://www.whirlpoolcorp.com/2017Annual/index.php">View Site</a>
+	</div>
+	<div id="#about" class="homeScreen homeScreen--2">
+		<div class="container">
+			<div class="row">
+				<div class="homeScreen__content">
+					<h2 class="heading">About Me:</h2>
+					<div class="flex flex--top">
+						<div class="homeAboutCopy">
+							<h3 class="subHeading">I am a developer.</h3>
+							<p>I am privileged to work for <a href="https://www.cricommunications.com">Corporate Reports, Inc.</a>, where I get to use HTML, CSS, and JavaScript to create websites for a variety of Fortune-500 clients. I especially enjoy adding interest to our sites with the <a href="https://greensock.com/">Greensock Animation Platform</a> and working closely with graphic designers to achieve pixel-perfect results.</p>
+						
+							<h3 class="subHeading">I am an educator.</h3>
+							<p>I have 8 years of experience teaching high school foreign language. During that time, I especially enjoyed training my fellow teachers on effective curriculum development strategies.
+							<p>At Corporate Reports, I've led sessions on web accessibility best practices and a workshop on the ins and outs of the Webex messaging app. I am passionate about adult learning theory and enjoy helping teams improve through quality training.</p>
+						
+							<h3 class="subHeading">I am a Web Accessibility Specialist.</h3>
+							<p>I received my WAS certification from the <a href="https://www.accessibilityassociation.org/">International Association of Accessibility Professionals</a> in February, 2022. At Corporate Reports, I led our development team in modifying our workflow to incorporates accessibility in all its phases. I am the goto person at our company for any web accessibility questions. </p>
+						</div>
+						<div class="homeAboutImage">
+							<img src="_images/home/profile.jpg" alt="Jon Guiles">
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<div class="screen screen--5" data-screen="5" id="about">
-	<div class="nameSquare nameSquare--wide">
-		<h1 class="nameSquare__heading">Jon Guiles</h1>
-		<h2 class="nameSquare__tagLine">About / Contact</h2>
-	</div>
-	<div class="container">
-		<div class="row row--about">
-			<img src="_images/screen5/profile.jpg" alt="" class="about__profile">
-			<p class="about__blurb">I am a Front-End Web Developer that specializes in using JavaScript, JQuery, AJAX, HTML5, and CSS3 to construct high-quality, responsive web content. <br><br> I am currently privileged to work as a part of the Corporate Reports Inc. Interactive Web Development Team. I also freelance for local non-profit organizations in the Atlanta Area. I enjoy learning new skills and I am always looking for ways to improve my craft. If you would like to contact me for a freelance oportunity, please don't hesitate to do so by clicking on the link below.</p>
-		</div>
-		<div class="row">
-			<div class="about__buttonWrapper">
-				<div class="about__button about__button--contact">
-					<a href="#">Contact Me</a>
+	<div id="#work" class="homeScreen homeScreen--3">
+		<div class="container">
+			<div class="row">
+				<div class="homeScreen__content">
+					<h2 class="heading">Work Samples:</h2>
+					<div class="sample sample--1 flex flex--center flex--mid">
+						<div class="sample__copy">
+							<h3 class="subHeading"><a href="https://corporatereport.com/assurant/2022/ar/">Assurant, Inc. Annual Report</a></h3>
+							<p>How do you add interest to an online annual report? In this case, the design called for a variety of animation treatments to the Assurant hexagons used throughout the site. I used the Greensock Animation Platform for the intro on the home page, in the site header to expand the navigation menu, and throughout to expand the decorative hexagon graphics when they scroll into&nbsp;view.</p>
+							<ul class="sample__copy__tech flex">
+								<li>GSAP</li>
+								<li>WCAG 2.1</li>
+								<li>Responsive CSS</li>
+								<li>jQuery/JavaScript</li>
+							</ul>
+						</div>
+						<a href="https://corporatereport.com/assurant/2022/ar/" class="sample__img">
+							<img src="_images/home/sample1.png" alt="Assurant 2022 Annual Report">
+						</a>
+					</div>
+					<div class="sample sample--2 flex flex--center flex--mid flex--reverse">
+						<div class="sample__copy">
+							<h3 class="subHeading"><a href="https://www.lamresearch.com/esg-report/">Assurant, Inc. Annual Report</a></h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur inventore sapiente dignissimos. Laborum fugit aliquam repudiandae eius, inventore obcaecati tenetur voluptatibus eaque quod et illum ratione quibusdam dignissimos exercitationem placeat iusto qui molestias. Quis saepe repellendus, accusantium dolorum necessitatibus est eum. Recusandae dignissimos consequatur.</p>
+							<ul class="sample__copy__tech flex">
+								<li>GSAP</li>
+								<li>WCAG 2.1</li>
+								<li>Responsive CSS</li>
+								<li>jQuery/JavaScript</li>
+							</ul>
+						</div>
+						<a class="sample__img" href="https://www.lamresearch.com/esg-report/">
+							<img src="_images/home/sample2.png" alt="Lam Research 2021 ESG Report">
+						</a>
+					</div>
+					<!-- <div class="sample sample--3 flex flex--center flex--mid">
+						<div class="sample__copy">
+							<h3></h3>
+							<p></p>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="sample__img">
+							<img src="" alt="">
+							<ul>
+						</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="formContainer">
-		<div class="contactForm" id="contactForm">
-			<div class="form__close">
-				<?php include('_images/screen5/close.svg'); ?>
+	<div id="#contact" class="homeScreen homeScreen--4">
+		<div class="container">
+			<div class="row">
+				<div class="homeScreen__content">
+					<h2 class="heading">Contact Me:</h2>
+				</div>
 			</div>
-			<form class="form" name="contact" action="">
-				<fieldset>
-					<div class="formWrapper formWrapper--half formWrapper--1">
-						<label class="form__label form__label--label" for="name" id="name_label">Name</label>
-						<input class="form__input" placeholder="Name" type="text" name="name" id="name" value="" />
-						<label class="form__label form__label--error" for="name" id="nameError">This field is required.</label>
-					</div>
-					<div class="formWrapper formWrapper--half formWrapper--2">
-						<label class="form__label form__label--label" for="email" id="email_label">Email</label>
-						<input class="form__input" placeholder="Email" class="form__input" type="text" name="email" id="email" size="30" value=""/>
-						<label class="form__label form__label--error" for="email" id="emailError">This field is required.</label>
-					</div>
+		</div>
+	</div>
 
-					<div class="formWrapper formWrapper--full formWrapper--3">
-						<label class="form__label form__label--label" for="message" id="messageLabel">Message:</label>
-						<textarea placeholder="Message..." class="form__input" name="message" id="message" rows="7" cols="30"></textarea>
-						<label class="form__label form__label--textarea form__label--error" for="message" id="messageError">This field is required.</label>
-					</div>
-					<input class="form__submit" type="submit" name="submit" id="submit_btn" value="Send email" />
-				</fieldset>
-			</form>
-			<div class="form__success">
-				<h2>Contact Form Submitted.</h2>
-				<p>We will be in touch soon.</p>
-			</div>
-		</div>
+	<div class="homeBotContent flex flexCol flexCol--mid">
+		<a href="https://www.linkedin.com/in/jonguiles/" aria-label="Check out my LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+		<a href="mailto:jonguiles@gmail.com" aria-label="Send me an email"><i class="fa-regular fa-envelope"></i></a>
+		<div class="homeBotContent__line"></div>
 	</div>
-</div>
+</main>
 
-<?php $includeFile->includeContent(0,'botInc'); ?>
+<?php $cri->includeContent(0,'footer'); ?>	
+<?php $cri->includeContent(0,'ieSplash'); ?>
+<?php $cri->includeContent(0,'botInc'); ?>
 </body>
 </html>

@@ -1,20 +1,29 @@
 <?php
 		
 class globalFunctions {
-	public function includeContent($folder,$include) {
-		if ($folder == 1) {
+	public function includeContent($sub,$content,$title = '',$title2 = '') {
+		if ($sub == 1) {
 			$directory = "../";
-		} else if ($folder == 2) {
+		} else if ($sub == 2) {
 			$directory = "../../";
-		} else if ($folder == 3) {
-			$directory = "../../../";
 		} else {
 			$directory = "";
 		}
-		include($directory."_includes/".$include.".php");
+
+		if ( $title != '' ) {
+			$page_title = $title.' | ';
+			$full_title = $page_title.$title2;
+		} else {
+			$page_title = $title;
+			$full_title = $title2;
+		}
+
+		$report_title = $title2;
+		
+		include($directory."_includes/".$content.".php");
 	}
 }
 
-$includeFile = new globalFunctions;
+$cri = new globalFunctions;
 
 ?>
