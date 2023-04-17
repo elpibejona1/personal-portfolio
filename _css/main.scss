@@ -369,6 +369,15 @@ header {
 
 		span { color: $turquoise; }
 	}
+
+	&--4 {
+		.container,
+		.row { height: 100vh; }
+
+		.homeScreen__content { max-width: 600px; text-align: center; }
+
+		p { font-size: 22px; }
+	}
 }
 
 .homeScreen__content {
@@ -453,7 +462,6 @@ header {
 	li {
 		font-family: $varela;
 		color: $gold;
-		text-shadow: 2px -2px 3px $blue;
 
 		+ li { margin-left: 20px; }
 	}
@@ -474,9 +482,7 @@ header {
 		background-color: $turquoise;
 		position: absolute;
 		top: 25px;
-		left: 25px;
 		z-index: 1;
-		transition: top 0.5s, left 0.5s;
 	}
 
 	img {
@@ -489,18 +495,26 @@ header {
 		transition: filter 0.5s;
 	}
 
-	&:hover {
-		&::after { top: 15px; left: 15px; }
-	
-		img { filter: grayscale(0%); }
+	&:hover img { filter: grayscale(0%); }
+
+	&--odd{
+		&::after { left: 25px; transition: top 0.5s, left 0.5s; }
+
+		&:hover::after { top: 15px; left: 15px; }
+	}
+
+	&--even{
+		&::after { right: 25px; transition: top 0.5s, right 0.5s; }
+
+		&:hover::after { top: 15px; right: 15px; }
 	}
 }
 
-.sample.flex--reverse {
+.sample--even {
 	.sample__copy {
-		margin-left: -60px;
+		margin-left: -50px;
 		margin-right: 50px;
-		text-align: right;
+		order: 2;
 	}
 	
 	.sample__copy__tech {
@@ -509,15 +523,7 @@ header {
 		justify-content: flex-end;
 	}
 	
-	.sample__img {
-		margin-right: 0;
-
-		&::after { left: auto; right: 25px; }
-	
-		&:hover {
-			&::after { left: auto; right: 15px; }
-		}
-	}
+	.sample__img { margin-right: 0; order: 1; }
 }
 
 .homeBotContent__line {
