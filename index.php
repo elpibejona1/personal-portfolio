@@ -28,7 +28,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="#about" class="homeScreen homeScreen--2">
+	<div class="homeScreen homeScreen--2 homeScreen--about">
 		<div class="container">
 			<div class="row">
 				<div class="homeScreen__content">
@@ -59,7 +59,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="#work" class="homeScreen homeScreen--3">
+	<div class="homeScreen homeScreen--3 homeScreen--work">
 		<div class="container">
 			<div class="row">
 				<div class="homeScreen__content">
@@ -107,7 +107,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="#contact" class="homeScreen homeScreen--4">
+	<div class="homeScreen homeScreen--4 homeScreen--contact">
 		<div class="container">
 			<div class="row row--mid row--center">
 				<div class="homeScreen__content">

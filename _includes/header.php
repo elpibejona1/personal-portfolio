@@ -20,9 +20,9 @@
 				
 			<!-- Primary Nav -->
 			<nav class="header__primaryNav" aria-label="Primary Navigation Menu">
-				<a href="">About</a>
-				<a href="">Work</a>
-				<a href="">Contact</a>
+				<a class="header__primaryNav__link" href="#about">About</a>
+				<a class="header__primaryNav__link" href="#work">Work</a>
+				<a class="header__primaryNav__link" href="#contact">Contact</a>
 			</nav>
 
 			<a class="header__download" href="">Resume</a>

@@ -5,10 +5,16 @@ var global = {
 		global.detectTouch();
 		global.statusIndicator();
 		global.nav();
-
-		if (global.check('[data-fancybox]')) {
-			global.lightBoxes();
-		}
+		
+		setTimeout(function(){
+			if (window.location.hash !== "") {
+				var hash = window.location.hash;
+				
+				global.hashNavigation(hash);
+			} else {
+				window.scrollTo(0,0);
+			}
+		}, 500)
 	},
 	controller: new ScrollMagic.Controller({}),
 	skip: function() {
@@ -111,6 +117,27 @@ var global = {
 		})
 		.setTween(navShrinkTl)
 		.addTo(global.controller);
+
+		$(window).on('hashchange', function(){
+			var hash = window.location.hash;
+			
+			global.hashNavigation(hash);
+		})
+	},
+	hashNavigation: function(hash) {
+		var modifier = hash.slice(1);
+		var $section = $('.homeScreen--' + modifier);
+
+		if ($section.length > 0) {
+			var position = $section.offset().top;
+			var offset = 92;
+
+			if (modifier === 'contact') {
+				offset = 0;
+			}
+
+			gsap.to(window, 0.5, { scrollTo: { y: position, offsetY: offset } });
+		}
 	}
 }
 global.init();
