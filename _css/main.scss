@@ -404,12 +404,17 @@ header {
 	}
 }
 
+.homeAboutCopy { order: 1; }
+
+.homeAboutCopy__section + .homeAboutCopy__section { margin-top: 30px; }
+
 .homeAboutImage {
 	width: 275px;
 	margin-left: 50px;
 	margin-right: 50px;
 	flex-shrink: 0;
 	position: relative;
+	order: 2;
 
 	&::after {
 		content: "";

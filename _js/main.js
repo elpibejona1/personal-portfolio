@@ -119,6 +119,9 @@ global.init();
 var animations = {
 	init: function() {
 		animations.intro();
+		animations.about();
+		animations.samples();
+		animations.contact();
 	},
 	intro: function() {
 		var circle = document.getElementById('logoCircle');
@@ -139,6 +142,71 @@ var animations = {
 			.from('.heading--first', 0.25, { x: -100, opacity: 0 })
 			.from('.homeScreen--1 p', 0.25, { y: 50, opacity: 0, stagger: 0.125 })
 			.to('.homeBotContent', 0.25, { opacity: 1 });
+	},
+	about: function(){
+		var aboutTl = gsap.timeline({});
+
+		aboutTl
+			.from('.heading--about', 0.25, { x: -100, opacity: 0 })
+			.from('.homeAboutImage', 0.25, { x: '100%', opacity: 0 })
+			.from('.homeAboutCopy__section', 0.25, { y: 50, opacity: 0, stagger: 0.125 });
+
+		var scene = new ScrollMagic.Scene({
+			triggerElement: '.heading--about',
+			triggerHook: 'onCenter',
+			reverse: false,
+		})
+		.setTween(aboutTl)
+		.addTo(global.controller);
+	},
+	samples: function(){
+		var headingScene = new ScrollMagic.Scene({
+			triggerElement: '.heading--samples',
+			triggerHook: 'onCenter',
+			reverse: false,
+		})
+		.setTween(
+			gsap.from('.heading--samples', 0.25, { x: -100, opacity: 0 })
+		)
+		.addTo(global.controller);
+
+		$('.sample').each(function(){
+			var $this = $(this);
+			var $copy = $this.find('.sample__copy');
+			var $img = $this.find('.sample__img');
+			var sampleTl = gsap.timeline({});
+
+			sampleTl.from($copy, 0.5, { y: '100%', opacity: 0 });
+
+			if ($img.hasClass('sample__img--odd')) {
+				sampleTl.from($img, 0.5, { x: '100%', opacity: 0 }, '-=0.5');
+			} else {
+				sampleTl.from($img, 0.5, { x: '-100%', opacity: 0 }, '-=0.5');
+			}
+
+			var scene = new ScrollMagic.Scene({
+				triggerElement: this,
+				triggerHook: 0.75,
+				reverse: false
+			})
+			.setTween(sampleTl)
+			.addTo(global.controller);
+		})
+	},
+	contact: function(){
+		var contactTl = gsap.timeline({});
+
+		contactTl
+			.from('.heading--contact', 0.25, { x: -100, opacity: 0 })
+			.from('.homeScreen--4 p', 0.25, { y: 50, opacity: 0 });
+
+		var scene = new ScrollMagic.Scene({
+			triggerElement: '.heading--contact',
+			triggerHook: 'onCenter',
+			reverse: false,
+		})
+		.setTween(contactTl)
+		.addTo(global.controller);
 	}
 }
 animations.init();

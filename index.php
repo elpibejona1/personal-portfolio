@@ -32,21 +32,27 @@
 		<div class="container">
 			<div class="row">
 				<div class="homeScreen__content">
-					<h2 class="heading">About Me:</h2>
-					<div class="flex flex--top">
-						<div class="homeAboutCopy">
-							<h3 class="subHeading">I am a developer.</h3>
-							<p>I am privileged to work for <a href="https://www.cricommunications.com">Corporate Reports, Inc.</a>, where I get to use HTML, CSS, and JavaScript to create websites for a variety of Fortune-500 clients. I especially enjoy adding interest to our sites with the <a href="https://greensock.com/">Greensock Animation Platform</a> and working closely with graphic designers to achieve pixel-perfect results.</p>
-						
-							<h3 class="subHeading">I am an educator.</h3>
-							<p>I have 8 years of experience teaching high school foreign language. During that time, I especially enjoyed training my fellow teachers on effective curriculum development strategies.
-							<p>At Corporate Reports, I've led sessions on web accessibility best practices and a workshop on the ins and outs of the Webex messaging app. I am passionate about adult learning theory and enjoy helping teams improve through quality training.</p>
-						
-							<h3 class="subHeading">I am a Web Accessibility Specialist.</h3>
-							<p>I received my WAS certification from the <a href="https://www.accessibilityassociation.org/">International Association of Accessibility Professionals</a> in February, 2022. At Corporate Reports, I led our development team in modifying our workflow to incorporate accessibility in all its phases. I am the goto person at our company for any web accessibility questions. </p>
-						</div>
+					<h2 class="heading heading--about">About Me:</h2>
+					<div class="homeScreen--2__flex flex flex--top">
 						<div class="homeAboutImage">
 							<img src="_images/home/profile.jpg" alt="Jon Guiles">
+						</div>
+						<div class="homeAboutCopy">
+							<div class="homeAboutCopy__section">
+								<h3 class="subHeading">I am a developer.</h3>
+								<p>I am privileged to work for <a href="https://www.cricommunications.com">Corporate Reports, Inc.</a>, where I get to use HTML, CSS, and JavaScript to create websites for a variety of Fortune-500 clients. I especially enjoy adding interest to our sites with the <a href="https://greensock.com/">Greensock Animation Platform</a> and working closely with graphic designers to achieve pixel-perfect results.</p>
+							</div>
+						
+							<div class="homeAboutCopy__section">
+								<h3 class="subHeading">I am an educator.</h3>
+								<p>I have 8 years of experience teaching high school foreign language. During that time, I especially enjoyed training my fellow teachers on effective curriculum development strategies.
+								<p>At Corporate Reports, I've led sessions on web accessibility best practices and a workshop on the ins and outs of the Webex messaging app. I am passionate about adult learning theory and enjoy helping teams improve through quality training.</p>
+							</div>
+						
+							<div class="homeAboutCopy__section">
+								<h3 class="subHeading">I am a Web Accessibility Specialist.</h3>
+								<p>I received my WAS certification from the <a href="https://www.accessibilityassociation.org/">International Association of Accessibility Professionals</a> in February, 2022. At Corporate Reports, I led our development team in modifying our workflow to incorporate accessibility in all its phases. I am the goto person at our company for any web accessibility questions. </p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -57,7 +63,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="homeScreen__content">
-					<h2 class="heading">Work Samples:</h2>
+					<h2 class="heading heading--samples">Work Samples:</h2>
 					<div class="sample sample--1 sample--odd flex flex--center flex--mid">
 						<div class="sample__copy">
 							<h3 class="subHeading"><a href="https://corporatereport.com/assurant/2022/ar/">Assurant, Inc. Annual Report</a></h3>
@@ -105,7 +111,7 @@
 		<div class="container">
 			<div class="row row--mid row--center">
 				<div class="homeScreen__content">
-					<h2 class="heading">Contact Me:</h2>
+					<h2 class="heading heading--contact">Contact Me:</h2>
 					<p>Want to discuss web development, accessibility, or curriculum design? Feel free to connect with me through <a href="https://www.linkedin.com/in/jonguiles/">my LinkedIn profile</a> or <a href="mailto:jonguiles@gmail.com">send me an email</a>.</p>
 				</div>
 			</div>
