@@ -378,6 +378,7 @@ header {
 	li {
 		font-family: $varela;
 		color: $gold;
+		text-align: center;
 
 		+ li { margin-left: 15px; }
 	}
@@ -497,11 +498,6 @@ header {
 }
 
 // Generic Media Queries
-@media only screen and (max-width: 1080px) {
-	// Content
-
-}
-
 @media only screen and (max-width: 1023px) {
 	// Header
 	header .container { padding: 10px 20px!important; }
@@ -568,6 +564,7 @@ header {
 		left: -20px;
 		opacity: 0;
 		visibility: hidden;
+		overflow-y: auto;
 	}
 
 	.header__primaryNav {
@@ -612,3 +609,26 @@ header {
 	.sample__img { max-width: 100%; }
 }
 
+// Zoom Styles
+@media only screen and (max-height: 666px) {
+	// Content
+	.homeScreen--1 .container,
+	.homeScreen--1 .row { min-height: 450px; }
+
+	.homeScreen--4 .container,
+	.homeScreen--4 .row { min-height: 575px; }
+}
+
+@media only screen and (max-width: 374px) {
+	// Header
+	.header__logo { width: 25px !important; }
+	
+	.header__menu { height: calc(100vh - 47px); }
+
+	.header__primaryNav { padding-bottom: 30px; }
+
+	// Content
+	.heading--first { font-size: 55px; }
+
+	.sample__copy__tech li {  font-size: 12px; }
+}
