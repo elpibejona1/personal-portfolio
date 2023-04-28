@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="21.56" viewBox="0 0 32 21.56">
+  <line id="bot" x1="32" y1="20.81" y2="20.81" style="fill: none; stroke: #bfa181; stroke-width: 1.5px;"/>
+  <line id="mid" x1="32" y1="10.78" y2="10.78" style="fill: none; stroke: #bfa181; stroke-width: 1.5px;"/>
+  <line id="top" x1="32" y1=".75" y2=".75" style="fill: none; stroke: #bfa181; stroke-width: 1.5px;"/>
+</svg>

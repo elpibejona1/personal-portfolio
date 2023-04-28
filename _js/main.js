@@ -118,15 +118,85 @@ var global = {
 		.setTween(navShrinkTl)
 		.addTo(global.controller);
 
-		$(window).on('hashchange', function(){
-			var hash = window.location.hash;
-			
+		$('.homeScreen').each(function(){
+			var $this = $(this);
+			var id = $this.attr('data-id')
+
+			if (id !== undefined) {
+				var $link = $('.header__primaryNav__link[href="' + id + '"]');
+				var $linkText = $link.text();
+				var duration = $this.outerHeight();
+				var scene = new ScrollMagic.Scene({
+					triggerElement: this,
+					triggerHook: 'onCenter',
+					duration: duration
+				})
+				.on('enter', function(){
+					$link.addClass('active');
+					$link.attr('aria-label', 'Current Section: ' + $linkText);
+					window.location.hash = id;
+				})
+				.on('leave', function(){
+					$link.removeClass('active');
+					$link.attr('aria-label', '');
+				})
+				.addTo(global.controller);
+			}
+		})
+
+		var hamburgerTl = gsap.timeline({ paused: true });
+
+		hamburgerTl
+			.to('#top', 0.25, { y: 10 })
+			.to('#bot', 0.25, { y: -10 }, '-=0.25')
+			.to('#mid', 0.25, { opacity: 0 }, '-=0.25')
+			.to('#top', 0.25, { rotation: '45deg', transformOrigin: 'center center' })
+			.to('#bot', 0.25, { rotation: '-45deg', transformOrigin: 'center center' }, '-=0.25');
+		
+
+		var closeMenu = function(){
+			var $hamburger = $('.header__hamburger');
+			$hamburger.removeClass('active');
+			$hamburger.attr('aria-expanded', 'false');
+			$('main').removeClass('hidden');
+
+			hamburgerTl.reverse();
+			gsap.to('.header__menu', 0.5, { autoAlpha: 0 });
+		};
+
+		$('.header__hamburger').on('click', function(){
+			var $this = $(this);
+
+			if (!$this.hasClass('active')) {
+				$this.addClass('active');
+				$this.attr('aria-expanded', 'true');
+
+				hamburgerTl.play();
+				gsap.to('.header__menu', 0.5, { autoAlpha: 1 });
+
+				setTimeout(function(){
+					$('main').addClass('hidden');
+				}, 500)
+			} else {
+				closeMenu();
+			}
+		})
+
+		$('.header__primaryNav__link').on('click', function(){
+			var hash = $(this).attr('href');
+
 			global.hashNavigation(hash);
+
+			if ($(window).width() < 768) {
+				closeMenu();
+			}
 		})
 	},
 	hashNavigation: function(hash) {
 		var modifier = hash.slice(1);
 		var $section = $('.homeScreen--' + modifier);
+		var $heading = $('.heading--' + modifier);
+		console.log($section);
 
 		if ($section.length > 0) {
 			var position = $section.offset().top;
@@ -136,7 +206,13 @@ var global = {
 				offset = 0;
 			}
 
-			gsap.to(window, 0.5, { scrollTo: { y: position, offsetY: offset } });
+			gsap.to(window, 0.5, { scrollTo: {
+				y: position,
+				offsetY: offset,
+				onComplete: function(){
+					$heading.focus();
+				}
+			} });
 		}
 	}
 }
@@ -188,12 +264,12 @@ var animations = {
 	},
 	samples: function(){
 		var headingScene = new ScrollMagic.Scene({
-			triggerElement: '.heading--samples',
+			triggerElement: '.heading--work',
 			triggerHook: 'onCenter',
 			reverse: false,
 		})
 		.setTween(
-			gsap.from('.heading--samples', 0.25, { x: -100, opacity: 0 })
+			gsap.from('.heading--work', 0.25, { x: -100, opacity: 0 })
 		)
 		.addTo(global.controller);
 
