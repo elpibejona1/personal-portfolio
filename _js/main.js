@@ -241,7 +241,7 @@ var animations = {
 			.to('.homeIntro', 0.5, { autoAlpha: 0 }, '+=1')
 			.from('.header__logo', 0.25, { scale: 0 })
 			.from('.header__primaryNav a', 0.25, { y: -50, opacity: 0, stagger: 0.125 })
-			.from('.header__download', 0.25, { y: -50, opacity: 0 }, '-=0.125')
+			/* .from('.header__download', 0.25, { y: -50, opacity: 0 }, '-=0.125') */
 			.from('.heading--first', 0.25, { x: -100, opacity: 0 })
 			.from('.homeScreen--1 p', 0.25, { y: 50, opacity: 0, stagger: 0.125 })
 			.to('.homeBotContent', 0.25, { opacity: 1 });
