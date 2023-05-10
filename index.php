@@ -47,7 +47,7 @@
 						
 							<div class="homeAboutCopy__section">
 								<h3 class="subHeading">I am a Web Accessibility Specialist.</h3>
-								<p>I received my WAS certification from the <a href="https://www.accessibilityassociation.org/">International Association of Accessibility Professionals</a> 2022. At Corporate Reports, I led our development team in modifying our workflow to incorporate accessibility in all its phases. I am the goto person at our company for any web accessibility questions. </p>
+								<p>I received my WAS certification from the <a href="https://www.accessibilityassociation.org/">International Association of Accessibility Professionals</a> in 2022. At Corporate Reports, I led our development team in modifying our workflow to incorporate accessibility in all its phases. I am the goto person at our company for any web accessibility questions. </p>
 							</div>
 						</div>
 					</div>
